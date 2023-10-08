@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # NFT Marketplace V3
 
 Create an NFT marketplace on top of your NFT collection on **any** EVM-compatible blockchain.
@@ -58,3 +59,7 @@ Contributions and [feedback](https://feedback.thirdweb.com) are always welcome! 
 ## Need help?
 
 For help, join the [discord](https://discord.gg/thirdweb) or visit our [support page](https://support.thirdweb.com).
+=======
+# zuperart
+A NFT Marketplace on Sepolia
+>>>>>>> 558e2e771f6f9a73d8b33fdf373d00a854db8867
