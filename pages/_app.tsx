@@ -1,5 +1,5 @@
 import type { AppProps } from "next/app";
-import { ThirdwebProvider } from "@thirdweb-dev/react";
+import { ThirdwebProvider, metamaskWallet, walletConnect } from "@thirdweb-dev/react";
 import { Navbar } from "../components/Navbar/Navbar";
 import NextNProgress from "nextjs-progressbar";
 import { NETWORK } from "../const/contractAddresses";
@@ -10,6 +10,10 @@ function MyApp({ Component, pageProps }: AppProps) {
     <ThirdwebProvider
       clientId={process.env.NEXT_PUBLIC_TEMPLATE_CLIENT_ID}
       activeChain={NETWORK}
+      supportedWallets={[
+        metamaskWallet({ recommended: true }),
+        walletConnect(),
+      ]}
     >
       {/* Progress bar when navigating between pages */}
       <NextNProgress
