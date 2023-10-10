@@ -5,6 +5,7 @@ import { useForm } from "react-hook-form";
 import styles from "../../styles/Sale.module.css";
 import profileStyles from "../../styles/Profile.module.css";
 import {
+  darkTheme,
   useContract,
   useCreateAuctionListing,
   useCreateDirectListing,
@@ -17,6 +18,7 @@ import {
 import { useRouter } from "next/router";
 import toast, { Toaster } from "react-hot-toast";
 import toastStyle from "../../util/toastConfig";
+import { title } from "process";
 
 type Props = {
   nft: NFTType;
@@ -71,8 +73,8 @@ export default function SaleInfo({ nft }: Props) {
         tokenId: nft.metadata.id,
         startDate: new Date(),
         endDate: new Date(),
-        floorPrice: "0",
-        buyoutPrice: "0",
+        floorPrice: "",
+        buyoutPrice: "",
       },
     });
 
@@ -111,7 +113,7 @@ export default function SaleInfo({ nft }: Props) {
         tokenId: nft.metadata.id,
         startDate: new Date(),
         endDate: new Date(),
-        price: "0",
+        price: "",
       },
     });
 
@@ -199,10 +201,32 @@ export default function SaleInfo({ nft }: Props) {
             className={styles.input}
             type="number"
             step={0.000001}
+            placeholder="0 ETH"
             {...registerDirect("price")}
           />
 
           <Web3Button
+            theme={darkTheme({
+              colors: {
+                primaryButtonBg: "#3B81F6",
+              },
+            })}
+            connectWallet={{
+              btnTitle: "Connect Wallet",
+              modalTitle: "Choose your wallet",
+              modalSize: "wide",
+              welcomeScreen: {
+                img: {
+                  src: "https://i.imgur.com/cC6aQ9P.png",
+                  width: 350,
+                  height: 350,
+                },
+                subtitle:
+                  "Explore the limitless possibilities of art ownership with ZuperArt, the premier NFT Marketplace for creators and collectors on worldwide",
+                title: "Welcome to ZuperArt",
+              },
+              modalTitleIconUrl: "https://i.imgur.com/dXXyOyO.png",
+            }}
             contractAddress={MARKETPLACE_ADDRESS}
             action={async () => {
               await handleSubmitDirect(handleSubmissionDirect)();
@@ -265,6 +289,7 @@ export default function SaleInfo({ nft }: Props) {
             className={styles.input}
             step={0.000001}
             type="number"
+            placeholder="0 ETH"
             {...registerAuction("floorPrice")}
           />
 
@@ -274,10 +299,34 @@ export default function SaleInfo({ nft }: Props) {
             className={styles.input}
             type="number"
             step={0.000001}
+            placeholder="0 ETH"
             {...registerAuction("buyoutPrice")}
           />
 
+          <br />
+
           <Web3Button
+            theme={darkTheme({
+              colors: {
+                primaryButtonBg: "#3B81F6",
+              },
+            })}
+            connectWallet={{
+              btnTitle: "Connect Wallet",
+              modalTitle: "Choose your wallet",
+              modalSize: "wide",
+              welcomeScreen: {
+                img: {
+                  src: "https://i.imgur.com/cC6aQ9P.png",
+                  width: 350,
+                  height: 350,
+                },
+                subtitle:
+                  "Explore the limitless possibilities of art ownership with ZuperArt, the premier NFT Marketplace for creators and collectors on worldwide",
+                title: "Welcome to ZuperArt",
+              },
+              modalTitleIconUrl: "https://i.imgur.com/dXXyOyO.png",
+            }}
             contractAddress={MARKETPLACE_ADDRESS}
             action={async () => {
               return await handleSubmitAuction(handleSubmissionAuction)();

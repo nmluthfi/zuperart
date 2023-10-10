@@ -34,3 +34,8 @@
   flex-direction: column;
   opacity: 1;
 }
+
+.Web3Button {
+  border-end-start-radius: 8px !important;
+  border-end-end-radius: 8px !important;
+}
