@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
                         {' '}
                         {addSpaceAfterPeriods("Join our ")}
                         <Link href="https://t.co/n7TeWVlA48">Indonesian Community</Link>
-                        {addSpaceAfterPeriods("now. © 2023. ")}
+                        {addSpaceAfterPeriods(" now. © 2023. ")}
                     </p>
                 </div>
             </div>
