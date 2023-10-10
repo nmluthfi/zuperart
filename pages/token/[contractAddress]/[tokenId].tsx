@@ -1,4 +1,5 @@
 import {
+  darkTheme,
   MediaRenderer,
   ThirdwebNftMedia,
   useContract,
@@ -285,6 +286,27 @@ export default function TokenPage({ nft, contractMetadata }: Props) {
             ) : (
               <>
                 <Web3Button
+                  theme={darkTheme({
+                    colors: {
+                      primaryButtonBg: "#3B81F6",
+                    },
+                  })}
+                  connectWallet={{
+                    btnTitle: "Connect Wallet",
+                    modalTitle: "Choose your wallet",
+                    modalSize: "wide",
+                    welcomeScreen: {
+                      img: {
+                        src: "https://i.imgur.com/cC6aQ9P.png",
+                        width: 350,
+                        height: 350,
+                      },
+                      subtitle:
+                        "Explore the limitless possibilities of art ownership with ZuperArt, the premier NFT Marketplace for creators and collectors on worldwide",
+                      title: "Welcome to ZuperArt",
+                    },
+                    modalTitleIconUrl: "https://i.imgur.com/dXXyOyO.png",
+                  }}
                   contractAddress={MARKETPLACE_ADDRESS}
                   action={async () => await buyListing()}
                   className={styles.btn}
@@ -325,6 +347,27 @@ export default function TokenPage({ nft, contractMetadata }: Props) {
                 />
 
                 <Web3Button
+                  theme={darkTheme({
+                    colors: {
+                      primaryButtonBg: "#3B81F6",
+                    },
+                  })}
+                  connectWallet={{
+                    btnTitle: "Connect Wallet",
+                    modalTitle: "Choose your wallet",
+                    modalSize: "wide",
+                    welcomeScreen: {
+                      img: {
+                        src: "https://i.imgur.com/cC6aQ9P.png",
+                        width: 350,
+                        height: 350,
+                      },
+                      subtitle:
+                        "Explore the limitless possibilities of art ownership with ZuperArt, the premier NFT Marketplace for creators and collectors on worldwide",
+                      title: "Welcome to ZuperArt",
+                    },
+                    modalTitleIconUrl: "https://i.imgur.com/dXXyOyO.png",
+                  }}
                   contractAddress={MARKETPLACE_ADDRESS}
                   action={async () => await createBidOrOffer()}
                   className={styles.btn}
