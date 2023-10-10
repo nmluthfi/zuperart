@@ -6,7 +6,7 @@
     color: white;
     padding: 1rem 0;
     text-align: center;
-    opacity: 0.2;
+    opacity: 0.23;
 }
 
 .footerContent {
@@ -16,6 +16,12 @@
 
 .add-space-after-period::after {
     content: "\00a0"; /* Unicode non-breaking space character */
+}
+
+/* In your Footer.module.css */
+.link {
+    color: #3B81F6; /* Set the desired color here */
+    /* You can also add other styles like text-decoration if needed */
 }
   
 @media (min-width: 1200px) {
