@@ -167,16 +167,16 @@ export default function TokenPage({ nft, contractMetadata }: Props) {
                     <div className={styles.eventContainer}>
                       <p className={styles.traitName}>From</p>
                       <p className={styles.traitValue}>
-                        {event.data.from?.slice(0, 4)}...
-                        {event.data.from?.slice(-2)}
+                        {event.data.from?.slice(0, 5)}...
+                        {event.data.from?.slice(-4)}
                       </p>
                     </div>
 
                     <div className={styles.eventContainer}>
                       <p className={styles.traitName}>To</p>
                       <p className={styles.traitValue}>
-                        {event.data.to?.slice(0, 4)}...
-                        {event.data.to?.slice(-2)}
+                        {event.data.to?.slice(0, 5)}...
+                        {event.data.to?.slice(-4)}
                       </p>
                     </div>
 
@@ -222,7 +222,7 @@ export default function TokenPage({ nft, contractMetadata }: Props) {
               <div className={styles.nftOwnerInfo}>
                 <p className={styles.label}>Current Owner</p>
                 <p className={styles.nftOwnerAddress}>
-                  {nft.owner.slice(0, 8)}...{nft.owner.slice(-4)}
+                  {nft.owner.slice(0, 5)}...{nft.owner.slice(-4)}
                 </p>
               </div>
             </Link>
@@ -303,7 +303,7 @@ export default function TokenPage({ nft, contractMetadata }: Props) {
                     });
                   }}
                 >
-                  Buy at asking price
+                  Buy at Floor Price
                 </Web3Button>
 
                 <div className={`${styles.listingTimeContainer} ${styles.or}`}>
@@ -312,10 +312,11 @@ export default function TokenPage({ nft, contractMetadata }: Props) {
 
                 <input
                   className={styles.input}
-                  defaultValue={
-                    auctionListing?.[0]?.minimumBidCurrencyValue
-                      ?.displayValue || 0
-                  }
+                  // defaultValue={
+                  //   auctionListing?.[0]?.minimumBidCurrencyValue
+                  //     ?.displayValue || "0 ETH"
+                  // }
+                  placeholder="0 ETH"
                   type="number"
                   step={0.000001}
                   onChange={(e) => {
@@ -343,7 +344,7 @@ export default function TokenPage({ nft, contractMetadata }: Props) {
                     });
                   }}
                 >
-                  Place bid
+                  Place Bid
                 </Web3Button>
               </>
             )}
