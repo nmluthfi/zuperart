@@ -4,6 +4,8 @@ import { Navbar } from "../components/Navbar/Navbar";
 import NextNProgress from "nextjs-progressbar";
 import { NETWORK } from "../const/contractAddresses";
 import "../styles/globals.css";
+import Footer from '../components/Footer/Footer'; // Adjust the import path as needed
+
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -28,6 +30,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Navbar />
       {/* Render the actual component (page) */}
       <Component {...pageProps} />
+      <Footer />
     </ThirdwebProvider>
   );
 }

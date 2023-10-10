@@ -1,0 +1,20 @@
+/* styles/Footer.module.css */
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: gray;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.footerContent {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.add-space-after-period::after {
+    content: "\00a0"; /* Unicode non-breaking space character */
+}
+  

@@ -12,19 +12,19 @@ const Home: NextPage = () => {
     <div className={styles.container}>
       <div className={styles.content}>
         <div className={styles.hero}>
-          <div className={styles.heroBackground}>
+          {/* <div className={styles.heroBackground}>
             <div className={styles.heroBackgroundInner}>
               <Image
                 src="/hero-gradient.png"
-                width={1390}
-                height={1390}
+                width={1980}
+                height={1280}
                 alt="Background gradient from red to blue"
                 quality={100}
                 className={styles.gradient}
               />
             </div>
-          </div>
-          <div className={styles.heroAssetFrame}>
+          </div> */}
+          {/* <div className={styles.heroAssetFrame}>
             <Image
               src="/hero-asset.png"
               width={860}
@@ -33,39 +33,28 @@ const Home: NextPage = () => {
               quality={100}
               className={styles.heroAsset}
             />
-          </div>
+          </div> */}
           <div className={styles.heroBodyContainer}>
             <div className={styles.heroBody}>
               <h1 className={styles.heroTitle}>
                 <span className={styles.heroTitleGradient}>
-                  Build NFT Marketplaces
+                  Welcome to ZuperArt.
                 </span>
-                <br />
-                faster than ever.
               </h1>
               <p className={styles.heroSubtitle}>
-                <Link
-                  className={styles.link}
-                  href="https://thirdweb.com"
-                  target="_blank"
-                >
-                  thirdweb
-                </Link>{" "}
-                gives you the tools you need to create audited, performant, and
-                flexible NFT marketplaces in <b>hours</b>, <i>not months</i>.
+                Your gateway to a world of digital creativity, where artists and collectors unite to buy, sell, and trade unique NFT masterpieces.
               </p>
-
               <div className={styles.heroCtaContainer}>
                 <Link className={styles.heroCta} href="/buy">
-                  Get Started
+                  start now
                 </Link>
-                <Link
+                {/* <Link
                   className={styles.secondaryCta}
                   href="https://github.com/thirdweb-example/marketplace-v3"
                   target="_blank"
                 >
-                  GitHub
-                </Link>
+                  Join our community
+                </Link> */}
               </div>
             </div>
           </div>
