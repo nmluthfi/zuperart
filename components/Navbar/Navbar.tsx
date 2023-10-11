@@ -34,6 +34,9 @@ export function Navbar() {
           <Link href="/sell" className={styles.link}>
             Sell
           </Link>
+          <Link href="#" className={styles.link}>
+            Stake
+          </Link>
         </div>
 
         <div className={styles.navRight}>
