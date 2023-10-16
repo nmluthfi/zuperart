@@ -34,7 +34,7 @@ export function Navbar() {
           <Link href="/sell" className={styles.link}>
             Sell
           </Link>
-          <Link href="#" className={styles.link}>
+          <Link href="#" className={`${styles.link} ${styles.stakeLink}`}>
             Stake
           </Link>
         </div>
