@@ -25,7 +25,7 @@ export function Navbar() {
         </div>
 
         <div className={styles.navMiddle}>
-          <Link href="https://zuperdrop.vercel.app/" className={styles.link}>
+          <Link href="http://drop.zupernetwork.tech/" className={styles.link}>
             Claim
           </Link>
           <Link href="/buy" className={styles.link}>
@@ -33,6 +33,9 @@ export function Navbar() {
           </Link>
           <Link href="/sell" className={styles.link}>
             Sell
+          </Link>
+          <Link href="http://explorer.zupernetwork.tech/" className={styles.link}>
+            Explorer
           </Link>
           <Link href="#" className={`${styles.link} ${styles.stakeLink}`}>
             Stake
