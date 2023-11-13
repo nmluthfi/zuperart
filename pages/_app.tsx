@@ -8,10 +8,25 @@ import Footer from '../components/Footer/Footer'; // Adjust the import path as n
 
 
 function MyApp({ Component, pageProps }: AppProps) {
+
   return (
     <ThirdwebProvider
       clientId={process.env.NEXT_PUBLIC_TEMPLATE_CLIENT_ID}
-      activeChain={{...NETWORK, faucets: ["#"]}}
+      activeChain={{
+        name: "ZuperNetwork",
+        chainId: 5698655, // Replace with the actual chain ID of your custom network
+        rpc: ["https://froopyland.dymension.xyz/13/zupernetwork_5698655-/evmrpc"],
+        nativeCurrency: {
+            decimals: 18,
+            name: "Zuper",
+            symbol: "ZUPER",
+          }, 
+        testnet: true,
+        chain: "ZuperNetwork",
+        shortName: "ZN",
+        slug: "zupernetwork",
+        faucets: ["https://discord.com/invite/97drPFwqt3"]
+      }}
       supportedWallets={[
         metamaskWallet({ recommended: true }),
         walletConnect(),
