@@ -12,21 +12,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThirdwebProvider
       clientId={process.env.NEXT_PUBLIC_TEMPLATE_CLIENT_ID}
-      activeChain={{
-        name: "ZuperChain",
-        chainId: 3974892, // Replace with the actual chain ID of your custom network
-        rpc: ["https://froopyland.dymension.xyz/21/zuperchain_3974892-1/evmrpc"],
-        nativeCurrency: {
-            decimals: 18,
-            name: "Zuper",
-            symbol: "ZUPER",
-          }, 
-        testnet: true,
-        chain: "ZuperChain",
-        shortName: "ZC",
-        slug: "zuperchain",
-        faucets: ["https://discord.com/invite/dymension"]
-      }}
+      activeChain={{...NETWORK,faucets: ["https://discord.com/invite/dymension"]}}
       supportedWallets={[
         metamaskWallet({ recommended: true }),
         walletConnect(),
