@@ -34,7 +34,7 @@ export function Navbar() {
           <Link href="/sell" className={styles.link}>
             Sell
           </Link>
-          <Link href="http://explorer.zupernetwork.tech/" className={styles.link}>
+          <Link href="http://explorer.zupernetwork.tech/" target="_blank" className={styles.link}>
             Explorer
           </Link>
           <Link href="#" className={`${styles.link} ${styles.stakeLink}`}>
