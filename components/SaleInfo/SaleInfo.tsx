@@ -201,7 +201,7 @@ export default function SaleInfo({ nft }: Props) {
             className={styles.input}
             type="number"
             step={0.000001}
-            placeholder="0 ETH"
+            placeholder="0 ZUPER"
             {...registerDirect("price")}
           />
 
@@ -289,7 +289,7 @@ export default function SaleInfo({ nft }: Props) {
             className={styles.input}
             step={0.000001}
             type="number"
-            placeholder="0 ETH"
+            placeholder="1 ZUPER"
             {...registerAuction("floorPrice")}
           />
 
@@ -299,7 +299,7 @@ export default function SaleInfo({ nft }: Props) {
             className={styles.input}
             type="number"
             step={0.000001}
-            placeholder="0 ETH"
+            placeholder="1 ZUPER"
             {...registerAuction("buyoutPrice")}
           />
 

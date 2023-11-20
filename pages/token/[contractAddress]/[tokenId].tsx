@@ -338,7 +338,7 @@ export default function TokenPage({ nft, contractMetadata }: Props) {
                   //   auctionListing?.[0]?.minimumBidCurrencyValue
                   //     ?.displayValue || "0 ETH"
                   // }
-                  placeholder="0 ETH"
+                  placeholder="1 ZUPER"
                   type="number"
                   step={0.000001}
                   onChange={(e) => {
