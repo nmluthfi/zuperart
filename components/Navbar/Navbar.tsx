@@ -40,6 +40,9 @@ export function Navbar() {
           <Link href="#" className={`${styles.link} ${styles.stakeLink}`}>
             Stake
           </Link>
+          <Link href="#" className={`${styles.link} ${styles.stakeLink}`}>
+            WorldWide
+          </Link>
         </div>
 
         <div className={styles.navRight}>
