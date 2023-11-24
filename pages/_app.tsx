@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThirdwebProvider
       clientId={process.env.NEXT_PUBLIC_TEMPLATE_CLIENT_ID}
-      activeChain={{...NETWORK,faucets: ["https://discord.com/invite/dymension"]}}
+      activeChain={{...NETWORK,faucets: ["http://faucet.zupernetwork.tech/"]}}
       supportedWallets={[
         metamaskWallet({ recommended: true }),
         walletConnect(),
