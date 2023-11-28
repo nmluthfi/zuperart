@@ -25,7 +25,7 @@ export function Navbar() {
         </div>
 
         <div className={styles.navMiddle}>
-          <Link href="http://drop.zupernetwork.tech/" className={styles.link}>
+          <Link href="http://drop.zupernetwork.tech/" target="_blank" className={styles.link}>
             Claim
           </Link>
           <Link href="/buy" className={styles.link}>
@@ -37,10 +37,7 @@ export function Navbar() {
           <Link href="http://explorer.zupernetwork.tech/" target="_blank" className={styles.link}>
             Explorer
           </Link>
-          <Link href="#" className={`${styles.link} ${styles.stakeLink}`}>
-            Stake
-          </Link>
-          <Link href="#" className={`${styles.link} ${styles.stakeLink}`}>
+          <Link href="http://worldwide.zupernetwork.tech/" target="_blank" className={styles.link}>
             WorldWide
           </Link>
         </div>
