@@ -8,8 +8,8 @@
 
 const customChain = {
   name: "ZuperChain",
-  chainId: 3974892,
-  rpc: ["https://froopyland.dymension.xyz/21/zuperchain_3974892-1/evmrpc"],
+  chainId: 6991015,
+  rpc: ["https://froopyland.dymension.xyz/23/zuperchain_6991015-1/evmrpc"],
   nativeCurrency: {
       decimals: 18,
       name: "Zuper",
@@ -22,7 +22,7 @@ const customChain = {
 }
 export const NETWORK = customChain;
 
-export const MARKETPLACE_ADDRESS = "0x9961c6a8B206C32738a2702aCEd0738A527864f4";
+export const MARKETPLACE_ADDRESS = "0xf8240B48CAe2a575d5f71B4C473637c5998A64E4";
 
 export const NFT_COLLECTION_ADDRESS =
   "0x1B9F34CD0A876048B5290Dbf5a923Eb29145F6C2";
