@@ -34,11 +34,11 @@ export function Navbar() {
           <Link href="/sell" className={styles.link}>
             Sell
           </Link>
-          <Link href="http://explorer.zupernetwork.tech/" target="_blank" className={styles.link}>
-            Explorer
-          </Link>
           <Link href="http://worldwide.zupernetwork.tech/" target="_blank" className={styles.link}>
             WorldWide
+          </Link>
+          <Link href="http://explorer.zupernetwork.tech/" target="_blank" className={styles.link}>
+            Explorer
           </Link>
         </div>
 
