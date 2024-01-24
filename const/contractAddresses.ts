@@ -25,6 +25,6 @@ export const NETWORK = customChain;
 export const MARKETPLACE_ADDRESS = "0xf8240B48CAe2a575d5f71B4C473637c5998A64E4";
 
 export const NFT_COLLECTION_ADDRESS =
-  "0x4c851bB1384c56093c9F7F7e11BED1E9372803a2";
+  "0x3c80A37BF0f9D827347B067345B8402cc3E805dC";
 
 export const ETHERSCAN_URL = "http://explorer.zupernetwork.tech/";
