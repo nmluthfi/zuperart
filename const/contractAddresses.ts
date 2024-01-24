@@ -8,8 +8,8 @@
 
 const customChain = {
   name: "ZuperChain",
-  chainId: 6991015,
-  rpc: ["https://froopyland.dymension.xyz/23/zuperchain_6991015-1/evmrpc"],
+  chainId: 7574035,
+  rpc: ["https://froopyland.dymension.xyz/29/zuperchain_7574035-1/evmrpc"],
   nativeCurrency: {
       decimals: 18,
       name: "Zuper",
